@@ -1,0 +1,21 @@
+:root {
+  /* This is for the background colors and hr line */
+  --color-body-bg: #ffffff;
+  --color-card-bg: #fafaf9;
+  /* This is for the typography colors */
+  --color-text-header: #20293a;
+  --color-text-body: #394150;
+  /* This is for the design badge */
+  --color-badge-text: #7c19ee;
+  --color-badge-bg: #f2eafd;
+  /* Font sizes */
+  --fs-title: 1.125rem;
+  --fs-body: 0.875rem;
+  --fs-tag: 0.625rem;
+  --fs-footer: 0.75rem;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: var(--color-body-bg);
+}

@@ -1,50 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="title" content="Embracing Minimalism | Blog Preview Card" />
+    <meta
+      name="description"
+      content="A minimalist blog preview card built by Emilio Felix. Exploring clean design and responsive web components."
+    />
+    <meta name="robots" content="index, follow" />
     <link
       rel="icon"
       href="resources/favicon.ico"
       type="image/x-icon"
       sizes="96x96"
     />
-
-    <title>devChallenges.io | Minimal Blog Card</title>
-
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Embracing Minimalism | Blog Preview Card</title>
   </head>
   <body>
-    <!-- Design
+    <article class="card">
+      <header>
+        <img
+          src="./resources/cactus.jpg"
+          alt="Minimalist green cactus in an orange clay pot"
+        />
+        <p>Design</p>
+      </header>
 
-  Embracing Minimalism
-
-  From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.
-
-  Annie Spratt -->
+      <div class="card-info">
+        <h1>Embracing Minimalism</h1>
+        <p>
+          From minimalist sculptures to minimalist paintings, this blog will
+          inspire you to appreciate the beauty that lies in simplicity.
+        </p>
+      </div>
+      <hr />
+      <footer class="card-footer">
+        <p>Annie Sprat</p>
+      </footer>
+    </article>
 
     <div class="author-info">
       Coded by <a href="#">Your Name Here</a> | Challenge by
