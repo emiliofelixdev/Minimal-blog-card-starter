@@ -1,7 +1,7 @@
 :root {
   /* This is for the background colors and hr line */
-  --color-body-bg: #ffffff;
-  --color-card-bg: #fafaf9;
+  --color-body-bg: #fafaf9;
+  --color-card-bg: #ffffff;
   /* This is for the typography colors */
   --color-text-header: #20293a;
   --color-text-body: #394150;
@@ -18,4 +18,84 @@
 body {
   font-family: "Sora", sans-serif;
   background-color: var(--color-body-bg);
+}
+
+.card {
+  max-width: 368px;
+  width: 100%;
+  margin: 164px auto;
+  background-color: var(--color-card-bg);
+  border-radius: 16px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+}
+
+header img {
+  height: 152px;
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+header p {
+  background-color: var(--color-badge-bg);
+  font-size: var(--fs-tag);
+  color: var(--color-badge-text);
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.card-info h1 {
+  color: var(--color-text-header);
+  font-size: var(--fs-title);
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.card-info p {
+  color: var(--color-text-body);
+  font-size: var(--fs-body);
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 90%;
+  line-height: 1.5;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e5eaf0;
+  width: 100%;
+}
+
+.card-footer p {
+  color: var(--color-text-body);
+  font-size: var(--fs-footer);
+}
+
+header,
+.card-info,
+.card-footer {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.author-info {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  font-size: 0.7rem;
+  color: #6c727f;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
