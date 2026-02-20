@@ -18,12 +18,18 @@
 body {
   font-family: "Sora", sans-serif;
   background-color: var(--color-body-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .card {
   max-width: 368px;
   width: 100%;
-  margin: 164px auto;
+  margin: 0;
   background-color: var(--color-card-bg);
   border-radius: 16px;
   padding-top: 16px;
@@ -97,5 +103,56 @@ header,
   color: #6c727f;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 520px;
+  }
+
+  .card-info h1 {
+    font-size: 2rem;
+  }
+
+  .card-info p {
+    font-size: 1.3rem;
+    width: 100%;
+    font-weight: 200;
+  }
+
+  .card-footer p {
+    font-size: 1.05rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .author-info {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 320px;
+  }
+
+  .card-info h1 {
+    font-size: 1.05rem;
+  }
+
+  .card-info p {
+    font-size: 0.7rem;
+  }
+
+  .card-footer p {
+    font-size: 0.6rem;
+  }
+
+  .author-info {
+    font-size: 0.5rem;
+  }
 }
